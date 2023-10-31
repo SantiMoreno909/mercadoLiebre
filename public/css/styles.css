@@ -1,121 +1,238 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h3{
-    font-size: 24px;
+h3 {
+  font-size: 24px;
 }
 
-p{
-    font-size: 12px;
+p {
+  font-size: 12px;
 }
-div.top-header{
-    padding: 5%;
-}
-
-header{
-    background-color: #EAC926;
+div.top-header {
+  padding: 5%;
 }
 
-header div.logo{
-    width: 50%;
+header {
+  width: 100%;
+  background-color: #eac926;
 }
 
-header div.logo{
-    padding: 10px;
-}
-header nav{
-    font-size: 12px;
+header div.logo {
+  width: 50%;
 }
 
-header ul li{
-    list-style-type: none;
+header div.logo {
+  padding: 10px;
+}
+header nav {
+  font-size: 12px;
 }
 
-header ul li a{
-    text-decoration: none;
-    color: #000;
+header ul li {
+  list-style-type: none;
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
+header ul li a {
+  text-decoration: none;
+  color: #000;
 }
 
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
 }
 
-div.burger-menu{
-    text-align: center;
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
 }
 
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
+div.burger-menu {
+  text-align: center;
 }
 
-article div.main-article{
-    width: 100%;
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
 }
 
-.price{
-    font-size: 18px;
+article {
+  margin: 10px 0;
+  width: 100%;
+}
+
+article div.main-article {
+  width: 300px;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 18px;
+  width: 30%;
 }
 
 .discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
+.description {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 5px;
 }
 
 h3,
-.description{
-    color: #666;
+.description {
+  color: #666;
 }
 
-section.banner img{
-    width: 100%;
+section.banner img {
+  width: 100%;
 }
 
-main{
-    width: 90%;
+main {
+  width: 90%;
 }
 
-main section article{
-    background-color: #fff;
+main section article {
+  background-color: #fff;
 }
 
-main section article img{
-    width: 100%;
+main section article img {
+  width: 100%;
 }
 
 main section article i,
-.discount{
-    color: #39b54a;
+.discount {
+  color: #39b54a;
 }
 
+/*Agregados ejercitación 1*/
 
+.product-desc-box > .product-delivery-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.product-desc-box {
+  position: relative;
+}
+
+.description,
+nav {
+  display: none;
+}
+
+div .form {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div .input {
+  font-size: 10px;
+}
+
+div .submit > i {
+  font-size: 20px;
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.d-flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Agregados ejercitación 2*/
+.discount {
+  width: 70%;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*ESTILOS RESPONSIVE*/
+/*Tablets*/
+@media (min-width: 361px) {
+  /*Agregados ejercitación 1*/
+  .description {
+    display: block;
+  }
+
+  nav {
+    display: block;
+    margin: 15px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  /*Agregados ejercitación 2*/
+  article {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 769px) {
+  /*Agregados ejercitación 1*/
+  article {
+    width: 23%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  /*Agregados ejercitación 2*/
+  .product-desc-box > .description {
+    font-size: 14px;
+  }
+
+  .product-desc-box > .product-delivery-icon {
+    right: 50%;
+  }
+}
