@@ -20,7 +20,7 @@ p {
   font-size: 12px;
 }
 div.top-header {
-  padding: 5%;
+  padding: 1%;
 }
 
 header {
@@ -36,30 +36,53 @@ header div.logo {
   padding: 10px;
 }
 header nav {
-  font-size: 12px;
+  font-size: 6px;
+  width: 100%;
+}
+
+.nav-1 {
+  margin: 0 auto 0 15px;
+}
+
+.nav-2 {
+  margin: 0 40px 0 auto;
 }
 
 header ul li {
   list-style-type: none;
+  margin: 5px;
 }
 
 header ul li a {
   text-decoration: none;
   color: #000;
 }
+header .form {
+  width: 50%;
+  margin: 0 4%;
+}
 
 header .form .input {
+  display: flex;
   background-color: #fff;
   border: 1px solid #000;
   outline: none;
   color: #666;
-  padding: 2px;
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+  width: 80%;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 header .form .submit {
   background-color: #fff;
   border: 1px solid #000;
   color: #666;
-  width: 10%;
+  width: 20%;
+  height: 30px;
+  border-radius: 0 5px 5px 0;
 }
 
 header div.top-header p {
@@ -89,7 +112,6 @@ article {
 }
 
 article div.main-article {
-  width: 300px;
   border-top: 1px solid #ebebeb;
   padding: 15px;
   display: flex;
@@ -184,6 +206,11 @@ div .submit > i {
   flex-direction: column;
 }
 
+.d-flex-c {
+  display: flex;
+  flex-direction: row;
+}
+
 /*Agregados ejercitación 2*/
 .discount {
   width: 70%;
@@ -193,6 +220,27 @@ div .submit > i {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.top-header > .logo,
+.top-header > .form {
+  width: 48%;
+}
+
+header nav,
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav {
+  font-size: 5px;
 }
 
 /*ESTILOS RESPONSIVE*/
@@ -212,10 +260,28 @@ div .submit > i {
     display: none;
   }
 
+  .description {
+    font-size: 12px;
+  }
+
   /*Agregados ejercitación 2*/
+
+  .price,
+  .discount {
+    max-width: 40%;
+    margin: 0 5px;
+    font-size: 12px;
+  }
+
   article {
     margin: 1%;
     width: 48%;
+  }
+
+  .top-header > .logo,
+  .top-header > .form,
+  header div.top-header p {
+    width: 30%;
   }
 }
 
@@ -230,9 +296,5 @@ div .submit > i {
   /*Agregados ejercitación 2*/
   .product-desc-box > .description {
     font-size: 14px;
-  }
-
-  .product-desc-box > .product-delivery-icon {
-    right: 50%;
   }
 }
