@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 16px;
 }
 div.top-header {
   padding: 1%;
@@ -36,7 +36,7 @@ header div.logo {
   padding: 10px;
 }
 header nav {
-  font-size: 6px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -50,7 +50,8 @@ header nav {
 
 header ul li {
   list-style-type: none;
-  margin: 5px;
+  margin: 16px;
+  display: none;
 }
 
 header ul li a {
@@ -188,7 +189,7 @@ div .form {
 }
 
 div .input {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 div .submit > i {
@@ -239,10 +240,6 @@ header nav ul {
   flex-direction: row;
 }
 
-header nav {
-  font-size: 5px;
-}
-
 /*ESTILOS RESPONSIVE*/
 /*Tablets*/
 @media (min-width: 361px) {
@@ -260,8 +257,12 @@ header nav {
     display: none;
   }
 
+  header ul li {
+    display: block;
+  }
+
   .description {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   /*Agregados ejercitación 2*/
@@ -270,7 +271,7 @@ header nav {
   .discount {
     max-width: 40%;
     margin: 0 5px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   article {
@@ -295,6 +296,10 @@ header nav {
 
   /*Agregados ejercitación 2*/
   .product-desc-box > .description {
-    font-size: 14px;
+    font-size: 20px;
+  }
+
+  header nav {
+    font-size: 20px;
   }
 }
