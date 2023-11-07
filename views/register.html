@@ -60,151 +60,197 @@
         <i class="fa fa-bars burger centrado"></i>
       </div>
     </header>
-    <section id="registro">
-      <h2 class="section__title">Registrate en Mercado Liebre</h2>
-      <form id="registro-form" action="/" method="get" class="d-flex-c">
-        <label for="nombre">Nombre y Apellido:</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          required
-          placeholder="Nombre y apellido"
-          pattern=".{6,}"
-          title="Tu nombre y apellido juntos deberían ser más largos"
-        />
+    <main>
+      <section id="registro" class="d-flex-c centrado">
+        <h2 class="section__title">Registrate en Mercado Liebre</h2>
+        <form
+          id="registro-form"
+          action="/"
+          method="get"
+          class="d-flex-c alinear-izq"
+        >
+          <label class="alinear-izq" for="nombre">Nombre y Apellido:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Nombre y apellido"
+            pattern=".{6,}"
+            title="Tu nombre y apellido juntos deberían ser más largos"
+          />
 
-        <label for="usuario">Nombre de usuario:</label>
-        <input
-          type="text"
-          id="usuario"
-          name="usuario"
-          required
-          placeholder="Nombre de usuario"
-          pattern=".{6,}"
-          title="Ingresa un nombre de usuario con más de 6 caracteres"
-        />
+          <label class="alinear-izq" for="usuario">Nombre de usuario:</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            required
+            placeholder="Nombre de usuario"
+            pattern=".{6,}"
+            title="Ingresa un nombre de usuario con más de 6 caracteres"
+          />
 
-        <label for="email">Correo Electrónico:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Correo electrónico"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          title="Ingresa una dirección de correo electrónico válida, por ejemplo: usuario@dominio.com"
-        />
+          <label class="alinear-izq" for="email">Correo Electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Correo electrónico"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Ingresa una dirección de correo electrónico válida, por ejemplo: usuario@dominio.com"
+          />
 
-        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-        <input
-          type="date"
-          id="fecha_nacimiento"
-          name="fecha_nacimiento"
-          required
-        />
+          <label class="alinear-izq" for="fecha_nacimiento"
+            >Fecha de Nacimiento:</label
+          >
+          <input
+            type="date"
+            id="fecha_nacimiento"
+            name="fecha_nacimiento"
+            required
+          />
 
-        <label for="domicilio">Domicilio:</label>
-        <input
-          type="text"
-          id="domicilio"
-          name="domicilio"
-          required
-          placeholder="Domicilio"
-        />
+          <label class="alinear-izq" for="domicilio">Domicilio:</label>
+          <input
+            type="text"
+            id="domicilio"
+            name="domicilio"
+            required
+            placeholder="Domicilio"
+          />
 
-        <label for="perfil_usuario">Perfil del Usuario (Comprar/Vender):</label>
-        <div class="d-flex-r">
-          <div class="radio-contenedor">
-            <input
-              type="radio"
-              id="comprar"
-              name="perfil_usuario"
-              value="comprar"
-              required
-            />
-            <label for="comprar">Comprar</label>
-          </div>
-          <div class="radio-contenedor">
-            <input
-              type="radio"
-              id="vender"
-              name="perfil_usuario"
-              value="vender"
-              required
-            />
-            <label for="vender">Vender</label>
-          </div>
-        </div>
-
-        <label for="categorias_interes">Categorías de Interés:</label>
-        <div class="d-flex-c">
+          <label class="alinear-izq" for="perfil_usuario"
+            >Perfil del Usuario (Comprar/Vender):</label
+          >
           <div class="d-flex-r">
-            <input
-              type="checkbox"
-              id="electro"
-              name="categorias"
-              value="Electro"
-            />
-            <label for="electro">Electro</label>
+            <div class="radio-contenedor">
+              <input
+                type="radio"
+                id="comprar"
+                name="perfil_usuario"
+                value="comprar"
+                required
+              />
+              <label class="alinear-izq" for="comprar">Comprar</label>
+            </div>
+            <div class="radio-contenedor">
+              <input
+                type="radio"
+                id="vender"
+                name="perfil_usuario"
+                value="vender"
+                required
+              />
+              <label class="alinear-izq" for="vender">Vender</label>
+            </div>
           </div>
-          <div class="d-flex-r">
-            <input type="checkbox" id="moda" name="categorias" value="Moda" />
-            <label for="mode">Moda</label>
-          </div>
-          <div class="d-flex-r">
-            <input type="checkbox" id="hogar" name="categorias" value="Hogar" />
-            <label for="hogar">Hogar</label>
-          </div>
-          <div class="d-flex-r">
-            <input
-              type="checkbox"
-              id="jugueteria"
-              name="categorias"
-              value="Juguetería"
-            />
-            <label for="jugueteria">Juguetería</label>
-          </div>
-          <div class="d-flex-r">
-            <input
-              type="checkbox"
-              id="vida_sana"
-              name="categorias"
-              value="Vida Sana"
-            />
-            <label for="vida_sana">Vida Sana</label>
-          </div>
-        </div>
 
-        <label for="foto_usuario">Foto de Usuario:</label>
-        <input
-          type="file"
-          id="foto_usuario"
-          name="foto_usuario"
-          accept="image/*"
-        />
+          <label class="alinear-izq" for="categorias_interes"
+            >Categorías de Interés:</label
+          >
+          <div class="d-flex-c">
+            <div class="d-flex-r">
+              <input
+                type="checkbox"
+                id="electro"
+                name="categorias"
+                value="Electro"
+              />
+              <label class="alinear-izq" for="electro">Electro</label>
+            </div>
+            <div class="d-flex-r">
+              <input type="checkbox" id="moda" name="categorias" value="Moda" />
+              <label class="alinear-izq" for="mode">Moda</label>
+            </div>
+            <div class="d-flex-r">
+              <input
+                type="checkbox"
+                id="hogar"
+                name="categorias"
+                value="Hogar"
+              />
+              <label class="alinear-izq" for="hogar">Hogar</label>
+            </div>
+            <div class="d-flex-r">
+              <input
+                type="checkbox"
+                id="jugueteria"
+                name="categorias"
+                value="Juguetería"
+              />
+              <label class="alinear-izq" for="jugueteria">Juguetería</label>
+            </div>
+            <div class="d-flex-r">
+              <input
+                type="checkbox"
+                id="vida_sana"
+                name="categorias"
+                value="Vida Sana"
+              />
+              <label class="alinear-izq" for="vida_sana">Vida Sana</label>
+            </div>
+          </div>
 
-        <label for="contrasena">Contraseña:</label>
-        <input
-          type="password"
-          id="contrasena"
-          name="contrasena"
-          required
-          placeholder="Contraseña"
-        />
+          <label class="alinear-izq" for="foto_usuario">Foto de Usuario:</label>
+          <input
+            type="file"
+            id="foto_usuario"
+            name="foto_usuario"
+            accept="image/*"
+          />
 
-        <label for="confirmar_contrasena">Confirmar Contraseña:</label>
-        <input
-          type="password"
-          id="confirmar_contrasena"
-          name="confirmar_contrasena"
-          required
-          placeholder="Confirmar contraseña"
-        />
+          <label class="alinear-izq" for="contrasena">Contraseña:</label>
+          <input
+            type="password"
+            id="contrasena"
+            name="contrasena"
+            required
+            placeholder="Contraseña"
+          />
 
-        <input type="submit" value="Registrarse" class="form-btn" />
-        <input type="reset" value="Borrar datos" class="form-btn" />
-      </form>
-    </section>
+          <label class="alinear-izq" for="confirmar_contrasena"
+            >Confirmar Contraseña:</label
+          >
+          <input
+            type="password"
+            id="confirmar_contrasena"
+            name="confirmar_contrasena"
+            required
+            placeholder="Confirmar contraseña"
+          />
+
+          <input type="submit" value="Registrarse" class="form-btn" />
+          <input type="reset" value="Borrar datos" class="form-btn" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__card d-flex-c centrado">
+        <i class="fas fa-credit-card"></i>
+        <p class="card__title">Pagá con tarjeta o en efectivo</p>
+        <p class="card__txt">
+          Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo
+          en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </div>
+      <div class="footer__card d-flex-c centrado">
+        <i class="fas fa-gift"></i>
+        <p class="card__title">Envíos gratis desde los $2.500</p>
+        <p class="card__txt">
+          Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en
+          miles de productos. Es un beneficio de MercadoPuntos.
+        </p>
+      </div>
+      <div class="footer__card d-flex-c centrado">
+        <i class="fas fa-user-shield"></i>
+        <p class="card__title">Seguridad de principio a fin</p>
+        <p class="card__txt">
+          ¿No te gusta? ¡Devolverlo! En MercadoLiebre no hay nada que no puedas
+          hacer porque estás siempre protegid@.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

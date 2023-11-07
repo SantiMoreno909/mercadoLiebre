@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.alinear-izq {
+  margin: 0 auto 0 0;
+}
+
+.alinear-der {
+  margin: 0 0 0 auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ebebeb;
@@ -29,15 +45,11 @@ header {
 }
 
 header div.logo {
-  width: 50%;
+  width: 46%;
 }
 
 header div.logo {
   padding: 10px;
-}
-header nav {
-  font-size: 16px;
-  width: 100%;
 }
 
 .nav-1 {
@@ -45,12 +57,12 @@ header nav {
 }
 
 .nav-2 {
-  margin: 0 40px 0 auto;
+  margin: 0 15px 0 auto;
 }
 
 header ul li {
   list-style-type: none;
-  margin: 16px;
+  margin: 10px;
   display: none;
 }
 
@@ -59,7 +71,7 @@ header ul li a {
   color: #000;
 }
 header .form {
-  width: 50%;
+  width: 46%;
   margin: 0 4%;
 }
 
@@ -87,7 +99,6 @@ header .form .submit {
 }
 
 header div.top-header p {
-  width: 100%;
   text-align: center;
   margin-top: 10px;
 }
@@ -109,7 +120,6 @@ div.burger-menu i {
 
 article {
   margin: 10px 0;
-  width: 100%;
 }
 
 article div.main-article {
@@ -171,9 +181,14 @@ main section article i,
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: all 1.5s ease;
 }
 .product-desc-box {
   position: relative;
+}
+
+.product-delivery-icon:hover {
+  rotate: -90deg;
 }
 
 .description,
@@ -240,6 +255,40 @@ header nav ul {
   flex-direction: row;
 }
 
+/*ESTILOS DEL FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 1rem 3rem;
+}
+
+.footer__card {
+  margin: 3vw 3vw;
+}
+
+footer i {
+  font-size: 7vw;
+  color: blue;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+footer i:hover {
+  color: #0022aa;
+}
+
+.card__title {
+  color: rgb(58, 57, 57);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.card__txt {
+  color: rgb(58, 57, 57);
+}
+
 /*ESTILOS RESPONSIVE*/
 /*Tablets*/
 @media (min-width: 361px) {
@@ -301,5 +350,14 @@ header nav ul {
 
   header nav {
     font-size: 20px;
+  }
+
+  /*Agregados ejercitación 4*/
+  footer {
+    flex-direction: row;
+  }
+
+  .footer__card {
+    margin: 2rem 1rem;
   }
 }

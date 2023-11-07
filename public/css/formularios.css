@@ -1,3 +1,8 @@
+#registro {
+  width: 70vw;
+  margin: 0 auto;
+}
+
 .section__title {
   font-size: 2rem;
   margin: 2rem auto;
@@ -20,7 +25,7 @@ form input {
 
 form {
   font-size: 1.5rem;
-  width: 80vw;
+  width: 100%;
 }
 
 .form-btn {
@@ -31,4 +36,8 @@ form {
 }
 .form-btn:hover {
   font-weight: 600;
+}
+
+.btn-login:hover {
+  background-color: #0022aa;
 }

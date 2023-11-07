@@ -60,28 +60,60 @@
         <i class="fa fa-bars burger centrado"></i>
       </div>
     </header>
-    <section id="login">
-      <h2 class="section__title">Iniciar Sesión</h2>
-      <form action="/" method="get" class="d-flex-c">
-        <label for="usuario">Nombre de Usuario:</label>
-        <input
-          type="text"
-          id="usuario"
-          name="usuario"
-          required
-          pattern=".{6,}"
-        /><br />
+    <main>
+      <section id="login" class="d-flex-c centrado">
+        <h2 class="section__title">Iniciar Sesión</h2>
+        <form action="/" method="get" class="d-flex-c">
+          <label class="alinear-izq" for="usuario">Nombre de Usuario:</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            required
+            pattern=".{6,}"
+          /><br />
 
-        <label for="contrasena">Contraseña:</label>
-        <input
-          type="password"
-          id="contrasena"
-          name="contrasena"
-          required
-        /><br />
+          <label class="alinear-izq" for="contrasena">Contraseña:</label>
+          <input
+            type="password"
+            id="contrasena"
+            name="contrasena"
+            required
+          /><br />
 
-        <input type="submit" value="Iniciar Sesión" class="form-btn" />
-      </form>
-    </section>
+          <input
+            type="submit"
+            value="Iniciar Sesión"
+            class="form-btn btn-login"
+          />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__card d-flex-c centrado">
+        <i class="fas fa-credit-card"></i>
+        <p class="card__title">Pagá con tarjeta o en efectivo</p>
+        <p class="card__txt">
+          Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo
+          en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </div>
+      <div class="footer__card d-flex-c centrado">
+        <i class="fas fa-gift"></i>
+        <p class="card__title">Envíos gratis desde los $2.500</p>
+        <p class="card__txt">
+          Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en
+          miles de productos. Es un beneficio de MercadoPuntos.
+        </p>
+      </div>
+      <div class="footer__card d-flex-c centrado">
+        <i class="fas fa-user-shield"></i>
+        <p class="card__title">Seguridad de principio a fin</p>
+        <p class="card__txt">
+          ¿No te gusta? ¡Devolverlo! En MercadoLiebre no hay nada que no puedas
+          hacer porque estás siempre protegid@.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
