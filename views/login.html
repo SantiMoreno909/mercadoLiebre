@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header centrado d-flex-c">
+        <div class="logo">
+          <img
+            src="images/logo-mercado-liebre.svg"
+            alt="Logo de MercadoLiebre"
+          />
+        </div>
+        <div class="form centrado" action="#" method="GET">
+          <div class="input centrado">Buscar productos, marcas y más</div>
+          <div class="submit centrado">
+            <i class="fa fa-search centrado"></i>
+          </div>
+        </div>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav class="d-flex-r">
+        <ul class="nav-1">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav-2">
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu centrado">
+        <i class="fa fa-bars burger centrado"></i>
+      </div>
+    </header>
+    <section id="login">
+      <h2 class="section__title">Iniciar Sesión</h2>
+      <form action="/" method="get" class="d-flex-c">
+        <label for="usuario">Nombre de Usuario:</label>
+        <input
+          type="text"
+          id="usuario"
+          name="usuario"
+          required
+          pattern=".{6,}"
+        /><br />
+
+        <label for="contrasena">Contraseña:</label>
+        <input
+          type="password"
+          id="contrasena"
+          name="contrasena"
+          required
+        /><br />
+
+        <input type="submit" value="Iniciar Sesión" class="form-btn" />
+      </form>
+    </section>
+  </body>
+</html>

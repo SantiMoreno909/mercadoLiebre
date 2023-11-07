@@ -207,7 +207,7 @@ div .submit > i {
   flex-direction: column;
 }
 
-.d-flex-c {
+.d-flex-r {
   display: flex;
   flex-direction: row;
 }
